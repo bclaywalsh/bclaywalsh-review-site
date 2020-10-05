@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    <meta charset="UTF-8">-->
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <title th:text="${reviewModel.reviewName}"> The Ben Review</title>
+</head>
+<body>
+<header>
+    <h1 th:text="${reviewModel.reviewName}"> The Ben Review </h1>
+</header>
+<main>
+    <ul>
+        <p><a href="/reviews">Reviews</a></p>
+        <li th:text="${reviewModel.reviewName}"}></li>
+    </ul>
+    <h2 th:text="${reviewModel.content}"></h2>
+
+</main>
+
+</body>
+</html>
