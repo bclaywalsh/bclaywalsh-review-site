@@ -1,0 +1,8 @@
+.body {
+  background-image: linear-gradient(rgb(200, 200, 255), rgb(100, 100, 155));
+}
+
+header {
+  background-color: rgb(50, 50, 100);
+  color: cadetblue;
+}
