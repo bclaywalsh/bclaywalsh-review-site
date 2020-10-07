@@ -4,6 +4,9 @@ body {
 
 .top-nav {
   background-color: rgb(50, 50, 60);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
 
 }
 
@@ -17,24 +20,38 @@ header {
   text-decoration: none;
   color: rgb(120, 120, 140);
 }
+.top-nav a:hover {
+  text-decoration: underline;
+  color: rgb(170, 170, 190);
+  font-size: 1.6rem;
+}
 
 .currentType {
   color: rgb(120, 120, 140);
   font-size: 1.8em;
   font-weight: bold;
   background-color: rgb(50, 50, 60);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
 }
 
 .type2 {
   color: rgb(120, 120, 140);
   background-color: rgb(50, 50, 60);
   font-size: 1.2em;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
 }
 
 .type3 {
   color: rgb(120, 120, 140);
   font-size: 1.2em;
   background-color: rgb(50, 50, 60);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
 }
 
 .reviewListColumnItems a {
@@ -42,7 +59,11 @@ header {
   text-decoration: none;
   color: black;
   font-family: "Bauhaus 93", "Benton Sans", "Brandon Grotesque", "Helvetica", "Times New Roman";
-
+}
+.reviewListColumnItems a:hover {
+  text-decoration: underline;
+  color: rgb(50, 50, 70);
+  font-size: 1.6rem;
 }
 
 .mediaTitleHeader {
@@ -51,7 +72,7 @@ header {
   font-size: 2.1rem;
   max-font-size: 2em;
   font-weight: bold;
-  color: white;
+  color: rgb(190,190,200);
   border-color: black;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.33);
@@ -62,11 +83,11 @@ header {
   -webkit-box-shadow: inset 64px 75px 300px 67px rgba(0,0,0,0.53);
   -moz-box-shadow: inset 64px 75px 300px 67px rgba(0,0,0,0.53);
   box-shadow: inset 64px 75px 300px 67px rgba(0,0,0,0.53);
-  /*background-image: linear-gradient(125deg, rgb(50, 50, 60) 10%, rgb(100, 100, 120));*/
+  background-image: linear-gradient(125deg, rgb(50, 50, 60) 10%, rgb(100, 100, 120));
 }
 
 .WrappedText {
-  color: black;
+  color: rgb(190,190,200);
 }
 
 footer {
@@ -75,7 +96,14 @@ footer {
 }
 
 .footlinks a {
-  color: rgb(120, 120, 160);
+  color: rgb(120, 120, 140);
+  text-decoration: none;
+}
+
+.footlinks a:hover {
+  text-decoration: underline;
+  color: rgb(170, 170, 190);
+  font-size: 1.3rem;
 }
 
 

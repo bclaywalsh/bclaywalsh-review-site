@@ -26,5 +26,9 @@ public class ReviewController {
         }
         model.addAttribute("reviewModel", reviewRepo.findOne(id));
         return "reviewTemplate";
+
+//        model.addAttribute("reviewsModel", reviewRepo.findAll());
+//        return "reviewsTemplate";
+
     }
 }
