@@ -1,16 +1,7 @@
 package bclaywalshreviews.reviewsartifact;
 
-//import org.springframework.boot.autoconfigure.domain.EntityScan;
-//import org.springframework.data.annotation.Id;
-//import org.springframework.web.bind.annotation.ModelAttribute;
-
-//import javax.persistence.Entity;
-//import java.awt.*;
-
-//@Entity
 public class Review {
 
-//    @Id
     private Long id;
     private String content;
     private String reviewName;
@@ -18,7 +9,9 @@ public class Review {
     private String image;
     private String category;
 
-    protected Review(){}
+    protected Review() {
+    }
+
     public Review(long id, String reviewName, String category, String image, String studio, String content) {
         this.id = id;
         this.reviewName = reviewName;
@@ -27,7 +20,6 @@ public class Review {
         this.studio = studio;
         this.category = category;
     }
-
 
 
     public Long getId() {

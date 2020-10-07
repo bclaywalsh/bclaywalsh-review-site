@@ -38,10 +38,10 @@ public class ReviewControllerMVCTest {
 
     @Test
     public void shouldFindAllReviewsInModel() throws Exception {
-        Collection<Review> allReviewsInModel = Arrays.asList(reviewOne,reviewTwo);
+        Collection<Review> allReviewsInModel = Arrays.asList(reviewOne, reviewTwo);
         when(reviewRepo.findAll()).thenReturn(allReviewsInModel);
         mockMvc.perform(get("/reviews"))
-                .andExpect(model().attribute("reviewsModel",allReviewsInModel));
+                .andExpect(model().attribute("reviewsModel", allReviewsInModel));
     }
 
     @Test
@@ -63,7 +63,7 @@ public class ReviewControllerMVCTest {
     public void shouldFindReviewOneInModel() throws Exception {
         Long reviewOneId = 1L;
         when(reviewRepo.findOne(reviewOneId)).thenReturn(reviewOne);
-        mockMvc.perform(get("/review?id=1")).andExpect(model().attribute("reviewModel",reviewOne));
+        mockMvc.perform(get("/review?id=1")).andExpect(model().attribute("reviewModel", reviewOne));
     }
 
 }
