@@ -17,7 +17,7 @@ body {
     padding-left: 20px;
     height: 45px;
     position: fixed;
-    z-index: 12;
+    z-index: 13;
     top: 0;
     left: 0;
     margin: 0;
@@ -31,7 +31,7 @@ body {
     max-width: 1500px;
     grid-template-columns: 200px 200px 200px auto;
     position: fixed;
-    z-index: 8;
+    z-index: 12;
     column-gap: 5px;
     left: 0;
     justify-content: center;
@@ -40,15 +40,14 @@ body {
 .currentType {
     height: 45px;
     top: 0;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index:9;
-
 }
+
 
 .type2 {
     height: 30px;
@@ -58,8 +57,6 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index:5;
-
 }
 
 .type3 {
@@ -70,16 +67,15 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index:5;
-
 }
 
 main {
     margin-top: 55px;
     padding: 0;
     display: grid;
-    grid-template-columns: 250px 40% auto;
-    grid-template-rows: 55px 100vh;
+    width: 100vw;
+    grid-template-columns: 250px 20% auto;
+    grid-template-rows: 55px 30vh 30vh;
     position: fixed;
 }
 
@@ -88,10 +84,11 @@ main {
     float: left;
     width: 20em;
     height: 70%;
-    margin-left: 10px;
-    margin-top: 45px;
+    margin-left: 20px;
+    margin-top: 25px;
     position: fixed;
     border-style: solid;
+    padding-top: 60px;
     padding-left: 10px;
     z-index: 1;
 }
@@ -102,7 +99,13 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
+    padding-left:5px;
+    margin-right: 10px;
     margin-bottom: 5px;
+    margin-left: 5px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgba(0,0,0,0.5);
 }
 
 .reviewBox {
@@ -112,6 +115,8 @@ main {
     grid-column-end: 10;
     position: relative;
     z-index: 3;
+    height: 100vh;
+    width: 100vw;
 }
 
 .mediaTitleHeader {
@@ -135,8 +140,8 @@ main {
 }
 
 img {
-    max-width: 50%;
-    max-height: 80%;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 .TextWrap {
@@ -149,7 +154,7 @@ img {
     margin-right: 10px;
     margin-top: 40px;
     font-size: 1.2rem;
-    max-width: 65rem;
+    max-width: 50em;
 }
 
 
@@ -159,7 +164,59 @@ img {
     border-style: solid;
 
 }
-
+.leftDecorativeBoxOutline {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 100vh;
+    height: 100vh;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.leftDecorativeBoxOutline2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.rightBoxOutline {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    margin-left: 40%;
+    margin-top: 8px;
+    width: 100%;
+}
+.decorativeBackGroundImage {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    margin-left: 8vw;
+    margin-top: 15vh;
+    max-width: 50vw;
+    max-height: 40vh;
+    border-style: double;
+    border-width: 10px;
+}
+.decorativeOverlayImage1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    margin-left: 30vw;
+    /*margin-top: 5vh;*/
+    -webkit-transform: scale(1.5);
+    /*transform: scaleY(1.5);*/
+    position: relative;
+    z-index:30;
+}
 .footer {
     display: flex;
     flex-direction: row;

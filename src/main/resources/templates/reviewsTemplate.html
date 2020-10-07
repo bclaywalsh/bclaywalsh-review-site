@@ -20,14 +20,19 @@
         </div>
     </header>
     <main>
-        <ol class="focusedReviewListColumn">
-            <li class="reviewListColumnItems" th:each="review: ${reviewsModel}">
+        <div class="focusedReviewListColumn">
+            <div class="reviewListColumnItems" th:each="review: ${reviewsModel}">
                 <a
                         th:href="@{/review(id=${review.id})}"
                         th:text="${review.reviewName}"
                 ></a>
-            </li>
-        </ol>
+            </div>
+        </div>
+        <div class="rightBoxOutline"></div>
+        <div class="leftDecorativeBoxOutline"></div>
+        <div class="leftDecorativeBoxOutline2"></div>
+        <img class="decorativeBackGroundImage"   src="images/ADream.jpg" alt="A panorama of a galaxy with overlaid text">
+        <img class="decorativeOverlayImage1"   src="images/BIGAngelaBack.png" alt="An armored robotic-looking space suit overlooks the scene">
     </main>
     <footer class="footer">
         <nav class="footlinks">
