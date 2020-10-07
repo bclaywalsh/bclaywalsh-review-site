@@ -2,8 +2,8 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
   <head>
     <!--    <meta charset="UTF-8">-->
-    <link th:href="@{/css/style.css}" rel="stylesheet" />
-    <link th:href="@{/css/layout.css}" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/layout.css" rel="stylesheet" />
     <title th:text="${reviewModel.reviewName}">BClayWalsh Review</title>
   </head>
   <body>
@@ -15,6 +15,8 @@
       <ul>
         <li th:text="${reviewModel.reviewName}"></li>
       </ul>
+
+      <img th:src="${reviewModel.image}" alt="game cover">
       <h2 th:text="${reviewModel.content}"></h2>
     </main>
   </body>
