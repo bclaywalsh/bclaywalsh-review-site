@@ -1,10 +1,160 @@
-.body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-header footer {
-  display: block;
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.subheader {
+    margin: 0;
+    display: grid;
+    top: 45px;
+    height: 45px;
+    max-width: 1500px;
+    grid-template-columns: 200px 200px 200px auto;
+    position: fixed;
+    column-gap: 5px;
+    left: 0;
+    justify-content: center;
+}
+
+.currentType {
+    height: 45px;
+    top: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.type2 {
+    height: 30px;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.type3 {
+    height: 25px;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    margin-top: 55px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 250px 40% auto;
+    grid-template-rows: 55px 100vh;
+    position: fixed;
+}
+
+.focusedReviewListColumn {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    padding-left: 10px;
+    margin-top: 45px;
+    position: fixed;
+}
+
+.reviewListColumnItems a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.reviewBox {
+    grid-row-start: 2;
+    grid-row-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 10;
+}
+
+.review-image {
+    width: 100%;
+    padding: 15px;
+    object-fit: contain;
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.TextWrap {
+    float: left;
+    margin: 10px;
+}
+
+.WrappedText {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    max-width: 65rem;
+}
+.mediaTitleHeader {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+
+}
+
+.review-content {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border-style: solid;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    bottom: 0;
+    position: fixed;
+    align-items: center;
+}
+
+.footlinks a {
+    margin-left: 20px;
+    padding: 10px;
 }

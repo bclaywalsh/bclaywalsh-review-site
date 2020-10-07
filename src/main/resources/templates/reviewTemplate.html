@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-  <head>
+<head>
     <!--    <meta charset="UTF-8">-->
-    <link href="/css/style.css" rel="stylesheet" />
-    <link href="/css/layout.css" rel="stylesheet" />
-    <title th:text="${reviewModel.reviewName}">BClayWalsh Review</title>
-  </head>
-  <body>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link href="/css/layout.css" rel="stylesheet"/>
+    <title th:text="${reviewModel.reviewName}+' - BClayWalsh Review'">BClayWalsh Review</title>
+</head>
+<body>
+<div class="container">
     <header>
-      <h1 th:text="${reviewModel.reviewName}">BClayWalsh Review</h1>
+        <nav class="top-nav">
+            <h1><a href="/reviews">BClayWalsh Reviews:</a></h1>
+        </nav>
+        <div class="subheader">
+            <h2 class="currentType">Indie Games</h2>
+            <h3 class="type2">Movies</h3>
+            <h3 class="type3">Books</h3>
+        </div>
     </header>
-    <main>
-      <a href="/reviews">Reviews</a>
-      <ul>
-        <li th:text="${reviewModel.reviewName}"></li>
-      </ul>
 
-      <img th:src="${reviewModel.image}" alt="game cover">
-      <h2 th:text="${reviewModel.content}"></h2>
+    <main>
+        <ol class="focusedReviewListColumn">
+            <li class="reviewListColumnItems">
+                <a href="">Axiom Verge</a>
+                <a href="">Bastion</a>
+                <a href="">Hyper Light Drifter</a>
+                <a href="">Transistor</a>
+            </li>
+        </ol>
+        <article class="reviewBox">
+            <img class="TextWrap" th:src="${reviewModel.image}" alt="game cover">
+<!--            <h2 class="review-content"></h2>-->
+<!--            <h2 class="review-content" th:text="${reviewModel.content}"></h2>-->
+            <p class="WrappedText" th:text="${reviewModel.content}"></p>
+
+        </article>
+        <h2 class="mediaTitleHeader" th:text="${reviewModel.reviewName}"></h2>
+
     </main>
-  </body>
+    <footer class="footer">
+        <nav class="footlinks">
+            <a href="mailto:bclaywalsh@gmail.com"
+            >email me: bclaywalsh@gmail.com</a
+            >
+            <a href="http://www.linkedin.com/in/benjamin-walsh-46899445"
+            >linkedIn</a
+            >
+            <a href="https://github.com/bclaywalsh">GitHub</a>
+            <a href="http://bclaywalsh.wixsite.com/portfolio">art portfolio</a>
+            <a href="mailto:DerelictStar01@gmail.com"
+            >email Derelict Star: derelictstar01@gmail.com</a
+            >
+        </nav>
+    </footer>
+</div>
+</body>
 </html>
